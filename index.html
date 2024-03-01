@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>React with Import Maps</title>
+</head>
+<body>
+
+<div id="app"></div>
+
+<script type="importmap">
+    {
+      "imports": {
+        "react": "https://cdn.skypack.dev/react",
+        "react-dom": "https://cdn.skypack.dev/react-dom",
+        "Card": "/dist/CardComponent.js",
+        "Button": "/dist/ButtonComponent.js",
+        "App": "/dist/App.js"
+      }
+    }
+</script>
+
+<script type="module" src="/dist/App.js"></script>
+
+
+</body>
+</html>
