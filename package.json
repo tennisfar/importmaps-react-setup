@@ -5,7 +5,8 @@
   "main": "App.js",
   "scripts": {
     "start": "npx serve",
-    "build": "babel src --out-dir dist --presets @babel/preset-react"
+    "build": "babel src --out-dir dist --presets @babel/preset-react",
+    "watch": "babel src --out-dir dist --presets @babel/preset-react --watch"
   },
   "keywords": [],
   "author": "",
